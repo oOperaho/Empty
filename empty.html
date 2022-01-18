@@ -21,24 +21,31 @@
             -webkit-text-stroke-color: black;
         }
 
-        button {
+        .lmfao {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        a {
             background-color: #65F791;
-            margin: auto;
+            text-align: center;
             border: 4px solid black;
             color: #010101;
             opacity: 0.6;
             transition: 0.3s;
-            width: 760px;
-            height: 60px;
+            padding: 20px 0px;
+            width: 800px;
             text-decoration: none;
-            display: inline-block;
             box-shadow: 0 6px 10px 0 #65F791, 0 4px 14px 0 #65F791;
             font-family: Trebuchet MS;
             font-size: 20px;
             font-weight: bold;
             cursor: pointer;
         }
-        button:hover {opacity: 1}
+        a:hover {opacity: 1}
 
         .gif {
             margin-top: 80px
@@ -48,26 +55,12 @@
 </head>
 <body onload="brython()">
     <h1>OPERAHO</h1>
-    <div style="text-align: center" id="Buttons">
-        <button onclick="location.href = 'https://github.com/oOperaho'" type="button" id="GitHub">GitHub</button>
-    <script type="text/python" id="fscript">
-        from browser import document, alert
-
-        def display(e):
-            alert("LMFAOOO")
-
-        document["GitHub"].bind("click", display)
-    </script>
-    <div>
-        <button onclick="location.href = 'https://medium.com/@Operaho'" type="button" id="Medium">Medium</button>
-    </div>
-    <div>
-        <button onclick="location.href = 'https://www.linkedin.com/in/operaho/'" type="button" id="LinkedIn">LinkedIn</button>
-    </div>
-    <div>
-        <button onclick="location.href = 'https://discordapp.com/users/543468415503826965'" type="button" id="Discord">Discord</button>
-    </div>
-    </div>
+    <div class="lmfao">
+    <a href="https://medium.com/@Operaho" target="_blank">Medium</a>
+    <a href="https://github.com/oOperaho" target="_blank">GitHub</a>
+    <a href="https://www.linkedin.com/in/operaho/" target="_blank">LinkedIn</a>
+    <a href="https://discordapp.com/users/543468415503826965" target="_blank">Discord</a>
+        </div>
     <div class="gif" style="text-align: center">
         <img src="https://uploads.scratch.mit.edu/get_image/project/199808407_480x360.png" alt="Infinity">
     </div>
